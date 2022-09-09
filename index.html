@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iuliia Raeva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Iuliia Raeva</h1>
+    <h2>Intern Frontend Developer</h2>
+    <img class="avatar" src="/avatar.jpg" alt="Avatar">
+    <section class="contact">
+        <h2>Contact information:</h2>
+        <div>
+            <span class="contact__title">Email:</span>
+            <span>uliaraeva0904@gmail.com</span>
+        </div>
+        <div>
+            <span class="contact__title">Phone:</span>
+            <span>8-911-591-80-52</span>
+        </div>
+        <div>
+            <span class="contact__title">Telegram:</span>
+            <span>@yuliaraeva</span>
+        </div>
+        <div>
+            <span class="contact__title">Discord:</span>
+            <span>Iuliia Raeva (@UliaRa)</span>
+        </div>
+    </section>
+    <section class="brief">
+        <h2>Briefly about myself:</h2>
+        <p>During my bachelor degree study I`ve spent a lot of time creating mobile applications and learning Java and Android. This experience led me to ITMO where I met new friends interested in frontend development and therefore I became passionate about it as well.</p>
+        <p>I had began self-studying HTML, CSS and JavaScript this winter and by the May I was invited in the freelance team who worked on frontend part for e-commerce projects. I have proved myself to be a non-conflict, responsible team player and have improved my skills a lot, working with SASS, Pug and Vue.</p>
+        <p>Speaking about my weakness I can admit that I am not capable of learning very fast. In spite of this I believe that my strenghts will help me master new skills and become a proficient frontend developer.</p>
+    </section>
+    <section class="skills">
+        <h2>Skills and proficiency:</h2>
+        <ol>
+            <li>HTML (Pug)</li>
+            <li>CSS (SASS)</li>
+            <li>JavaScript</li>
+            <li>Vue</li>
+            <li>BEM</li>
+            <li>VS Code</li>
+        </ol>
+    </section>
+    <section class="code">
+        <h2>Code example:</h2>
+        <h4>Task from <a href="https://www.codewars.com/kata/55f8a9c06c018a0d6e000132">Codewars</a></h4>
+        <p class="code__task">ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits. If the function is passed a valid PIN string, return true, else return false.</p>
+        <h4>My solution:</h4>
+        <div class="code__listing">
+            <p>function validatePIN (pin) {</p>
+            <p>let nums = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']</p>
+            <p>let pinDigits = pin.toString().split('').map(s => {</p>
+            <p>if (nums.includes(s)) {return 1}</p>
+            <p>else {return 0}</p>
+            <p>})</p>
+            <p>if (!pinDigits.includes(0)) {</p>
+            <p>if (pinDigits.length == 4 || pinDigits.length == 6) {</p>
+            <p>return true</p>
+            <p>} else { return false}</p>
+            <p>}</p>
+            <p>else {return false}</p>
+            <p>}</p>
+        </div>
+    </section>
+    <section class="work">
+        <h2>Work experience:</h2>
+        <div class="work__block">
+            <h4>IT-specialist</h4>
+            <p class="work__date">June 2019 - Jule 2019</p>
+            <p class="work__company">‘SpecTechCenter’ in Arkhangelsk</p>
+            <p class="work__description">Studied how photographic and video recording devices work and how to setup them</p>
+        </div>
+        <div class="work__block">
+            <h4>Intern 1C Developer</h4>
+            <p class="work__date">June 2020 - Jule 2020</p>
+            <p class="work__company">‘Arbis’ in Arkhangelsk</p>
+            <p class="work__description">Assisted with program debugging and fixed errors in previous versions</p>
+        </div>
+        <div class="work__block">
+            <h4>Intern Frontend Developer</h4>
+            <p class="work__date">May 2022 - August 2022</p>
+            <p class="work__company">Freelance</p>
+            <p class="work__description">Created layouts for e-commerce projects, studied Vue, Pug, SASS</p>
+        </div>
+        <h4>Also you can see my study project on my <a href="https://github.com/UliaRa">GitHub profile</a></h4>
+    </section>
+    <section class="education">
+        <h2>Education:</h2>
+        <div class="education__block">
+            <h4>Bachelor Degree</h4>
+            <p class="education__date">2017-2021</p>
+            <p class="education__faculty">Information systems and technologies</p>
+            <p class="education__university">Northern (Arctic) Federal University (NARFU)</p>
+        </div>
+        <div class="education__block">
+            <h4>Master Degree</h4>
+            <p class="education__date">2021-present</p>
+            <p class="education__faculty">Mobile and cloud technologies</p>
+            <p class="education__university">ITMO</p>
+        </div>
+    </section>
+    <section class="languages">
+        <h2>Languages:</h2>
+        <div class="languages__item">
+            <span class="languages__name">English</span>
+            <span class="languages__level"> - Intermediate</span>
+        </div>
+        <div class="languages__item">
+            <span class="languages__name">French</span>
+            <span class="languages__level"> - Elementary</span>
+        </div>
+        <div class="languages__item">
+            <span class="languages__name">Japanese</span>
+            <span class="languages__level"> - Elementary</span>
+        </div>
+    </section>
+</body>
+</html>
